@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>Palmpay Landing Page</title>
   </head>
   <body>
@@ -19,7 +20,7 @@
           <a href="#">Pricing</a>
         </nav>
         <div>
-          <button type="submit">Login</button>
+          <button type="submit">Log In</button>
           <select name="country" id="country">
             <option value="nigeria">Nigeria</option>
             <option value="tanzania">Tanzania</option>
@@ -32,19 +33,21 @@
           src="./assets/images/Slogan.42823a0f.png"
           alt="Palmpay Slogan"
           loading="lazy"
-          width="30%"
+          class = "slogan"
+          
         />
-        <p>
+        <p class="info">
           Seamlessly send and receive money, effortlessly pay your bills, shop
-          anywhere <br />
+          anywhere
           with ease, and take full control of your finances - all in PalmPay
         </p>
-        <a
+        <div class="download-links">
+          <a
           href="https://play.google.com/store/apps/details?id=com.transsnet.palmpay&hl=en&gl=US"
           ><img
             src="./assets/images/googlePlayBlack.1a580bf8.png"
             alt="Google Play Image"
-            width="150px"
+      
         /></a>
         <a
           href="https://apps.apple.com/ng/app/palmpay-transfers-bills/id1479656820?mt=8"
@@ -53,76 +56,94 @@
             alt="App Store Image"
             width="150px"
         /></a>
-        <p>
-          Licenced by CBN as a MMO
-          <img
-            src="./assets/images/centralBank.e14647d7.png"
-            alt="Central Bank Logo"
-            width="150px"
-          />
-        </p>
 
-        <p>
-          Deposits Insured by
-          <img
-            src="./assets/images/NDICBlack.ff0f2bf9.png"
-            alt="NDIC Logo"
-            width="70px"
-          />
-        </p>
+        </div>
+        
+        <div class="companies">
+          <p>
+            Licenced by CBN as a MMO </p>
+            <img
+              src="./assets/images/centralBank.e14647d7.png"
+              alt="Central Bank Logo"
+              width="150px"
+            />
+          
+  
+          <p>
+            Deposits Insured by</p>
+            <img
+              src="./assets/images/NDICBlack.ff0f2bf9.png"
+              alt="NDIC Logo"
+              
+            />
+        
+        </div>
+        
       </section>
+      
     </header>
     <main>
-      <img
-        src="./assets/images/makeFinancial.16856f8a.png"
-        alt="Image showing what Palmpay does"
-        width="80%"
-      />
-      <section>
-        <div>
-          <h3>Do more with your money</h3>
-          <p>
-            More than just transferring money. You can do all kinds of cool
-            stuff - pay you bills, make purchase, save and earn, all financial
-            needs in one PalmPay app.
-          </p>
-          <img
-            src="./assets/images/payBills.0efc6845 (1).png"
-            alt="Pay Bills Image"
-            width="90%"
-          />
-        </div>
-        <div>
-          <h3>Earn as you spend with rewards</h3>
-          <p>
-            With PalmPay, every expense becomes an opportunity to save. Unlock
-            exclusive discounts and cashback rewards with transaction you make.
-            Embrace cashless payment and make every payment count with PalmPay.
-          </p>
-          <img
-            src="./assets/images/coupons.b7c11783.png"
-            alt="An image of coupons"
-            width="90%"
-          />
-        </div>
-      </section>
-      <section>
-        <div>
+      
+      <section class="top-main-section">
+        <img
+      src="./assets/images/makeFinancial.16856f8a.png"
+      alt="Image showing what Palmpay does"
+      class="opay-image"
+    />
+    </section>
+    <section>
+      <div class="do-more">
+        <h3>Do more with your money</h3>
+        <p>
+          More than just transferring money. You can do all kinds of cool
+          stuff - pay you bills, make purchase, save and earn, all financial
+          needs in one PalmPay app.
+        </p>
+        <img
+          src="./assets/images/payBills.0efc6845 (1).png"
+          alt="Pay Bills Image"
+        
+        />
+      </div>
+      <div>
+        <h3>Earn as you spend with rewards</h3>
+        <p>
+          With PalmPay, every expense becomes an opportunity to save. Unlock
+          exclusive discounts and cashback rewards with <br> transaction you make.
+          Embrace cashless payment and make every payment count with PalmPay.
+        </p>
+        <img
+          src="./assets/images/coupons.b7c11783.png"
+          alt="An image of coupons"
+        
+        />
+      </div>
+
+    </section>
+        
+      
+      <section class="bottom-main-section">
+        <div class="container-one">
           <img
             src="./assets/images/NDIC.80dcf580.png"
             alt="NDIC Image"
             width="40%"
           />
-          <h4>Your privacy and security is our top priority</h4>
+          <div class="information">
+            <h4>Your privacy and security is our top priority</h4>
           <p>
             PalmPay is fully licensed as a Mobile Money Operator by CBN, and
             insured by NDIC. We manage customers' funds in compliance with all
             application regulations. This means that our more than 30 million
             users and millions of businesses are protected.
           </p>
+
+          </div>
+          
         </div>
-        <div>
-          <h4>We are happy to help</h4>
+        <div class="container-two">
+          <div class="customer-care">
+            <h4>We are happy to help</h4>
           <p>
             Browse topics, find resources, or chat with customer service.
             PalmPay support has answers to all your questions. Have an inquiry,
@@ -130,7 +151,10 @@
           </p>
           <p>Call us: +234 2018886888</p>
           <p>Email: support@palmpay.com</p>
-          <button type="submit">Contact Us</button>
+          <button type="submit">Contact</button>
+
+          </div>
+          
           <img
             src="./assets/images/HelpCenter.7adf53ab (1).png"
             alt="Help Center"
@@ -140,24 +164,21 @@
       </section>
     </main>
     <footer>
-      <section class="top=footer">
-        <img
-          src="./assets/images/footerBg.e4fed23a.png"
-          alt="Background Image"
-        />
-        <h5>Join 35+ millionusers who love PalmPay</h5>
-        <img src="./assets/images/appStore.5b02addd.png" alt="App Store Logo" />
-        <img
-          src="./assets/images/googlePlay.84c90596.png"
-          alt="Play Store Logo"
-        />
-        <img
-          src="./assets/images/footerBg.e4fed23a.png"
-          alt="Background Image"
-        />
+      <section class="top-footer">
+        
+        <h5>Join <b class="b">35+ million</b> users who love PalmPay</h5>
+        <div>
+          <img src="./assets/images/appStore.5b02addd.png" alt="App Store Logo" />
+          <img
+            src="./assets/images/googlePlay.84c90596.png"
+            alt="Play Store Logo"
+          />
+        </div>
+       
+        
       </section>
       <section class="bottom-footer" style="background-color: black">
-        <div>
+        <div class="company-logo">
           <a href="#"
             ><img
               src="./assets/images/logoLight.c6470eab.png"
@@ -172,7 +193,7 @@
           <img src="./assets/images/NDPC.5e0c1fc1.png" alt="NDPC Logo" />
           <p style="color: white">&copy; 2025 PalmPay. All rights reserved.</p>
         </div>
-        <div>
+        <div class="company-logo">
           <h5>Personal</h5>
 
           <a href="#">Palmpay App</a>
@@ -180,7 +201,7 @@
           <a href="#">Bill Payment</a>
           <a href="#">Buy and Shop</a>
         </div>
-        <div>
+        <div class="company-logo">
           <h5>Business</h5>
 
           <a href="#">Payin</a>
@@ -191,7 +212,7 @@
           <a href="#">Management</a>
           <a href="#">Agent Network</a>
         </div>
-        <div>
+        <div class="company-logo">
           <h5>Company</h5>
 
           <a href="#">About</a>
@@ -199,14 +220,15 @@
           <a href="#">Press and Media</a>
           <a href="#">Contact</a>
         </div>
-        <div>
+        <div class="company-logo">
           <h5>Legal</h5>
 
           <a href="#">Privacy Policy</a>
           <a href="#">Terms & Conditions</a>
           <a href="#">Complaints</a>
+          
 
-          <div>
+          <div class="social-media-icons">
             <img
               src="./assets/images/Instagram.402c19f4.png"
               alt="Instagram Logo"
@@ -222,8 +244,12 @@
             />
           </div>
         </div>
-        <hr />
-        <p style="color: white">
+        
+        
+      </section>
+      <hr />
+      <section class="footer-palmpay">
+        <p>
           PalmPay is a financial service provided by PalmPay Limited, licensed
           and regulated by the Central Bank of Nigeria (CBN). Deposits are
           insured by the Nigerian Deposit Insurance Corporation (NDIC). We
@@ -233,6 +259,7 @@
           Tanzania, and the United Kingdom.
         </p>
       </section>
+      
     </footer>
   </body>
 </html>
